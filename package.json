@@ -1,0 +1,23 @@
+{
+  "name": "ui_kit_landing_page",
+  "version": "1.0.0",
+  "description": "UI Kit Landing Page is a simple software website presenting its services for creating landing pages with Anima's landing page UI kit for Figma. Built with modern web technologies such as CSS Flexbox, CSS Grid and Sass.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w ./scss -o ./dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/St3f4nn/ui_kit_landing_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/St3f4nn/ui_kit_landing_page/issues"
+  },
+  "homepage": "https://github.com/St3f4nn/ui_kit_landing_page#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
