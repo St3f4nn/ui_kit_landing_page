@@ -48,6 +48,7 @@ img {
   padding: 1.25rem 0;
 
   .container {
+    padding: 0 3.125rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,7 +74,6 @@ img {
           .btn-primary {
             margin-left: 1.25rem;
             padding-left: 4.875rem;
-            position: relative;
 
             &::before {
               content: "";
@@ -96,6 +96,76 @@ img {
   }
 }
 
+// Hero
+
+#hero {
+  padding-top: 10rem;
+  padding-bottom: 8.4375rem;
+
+  .container {
+    display: flex;
+    align-items: start;
+
+    .hero-img {
+      max-width: 450px;
+    }
+
+    .hero-text-box {
+      padding-top: 2.875rem;
+      margin-right: 4.5rem;
+
+      .hero-heading {
+        font-weight: 700;
+        font-size: 4.1875rem;
+        line-height: 5.44375rem;
+        letter-spacing: -0.4px;
+        color: $neutral-mine-shaft;
+      }
+
+      .hero-paragraph {
+        font-weight: 400;
+        font-size: 1.3125rem;
+        line-height: 1.96875rem;
+        margin-top: 1.25rem;
+      }
+
+      .hero-cta {
+        display: flex;
+        align-items: center;
+        gap: 1.125rem;
+        margin-top: 2.5rem;
+
+        .btn-primary {
+          padding-left: 4.875rem;
+          position: relative;
+
+          &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url("../assets/images/global/rocket_launch.svg")
+              no-repeat center center/cover;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+          }
+        }
+
+        .hero-cta-btn {
+          padding: 1.0625rem 3.0625rem;
+          background-color: #fff;
+          border: 1px solid $cta-observatory;
+
+          &:hover {
+            background-color: $cta-observatory;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Media queries
 
 // Tablet (1024px)
@@ -105,6 +175,8 @@ img {
 
   #main-header {
     .container {
+      padding: 0 1.875rem;
+
       nav {
         ul {
           li {
@@ -116,6 +188,39 @@ img {
             .btn-secondary {
               margin-left: 0;
             }
+          }
+        }
+      }
+    }
+  }
+
+  // Hero
+
+  #hero {
+    padding-top: 6.25rem;
+    padding-bottom: 5.125rem;
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .hero-img {
+        max-width: 320px;
+        margin-top: 2.5rem;
+      }
+
+      .hero-text-box {
+        padding-top: 0;
+        margin-right: 0;
+
+        .hero-cta {
+          margin-top: 1.875rem;
+          justify-content: center;
+          gap: 0;
+
+          .hero-cta-btn {
+            display: none;
           }
         }
       }
@@ -134,6 +239,28 @@ img {
 
       nav {
         display: none;
+      }
+    }
+  }
+
+  // Hero
+
+  #hero {
+    padding-top: 1.875rem;
+    padding-bottom: 3.875rem;
+
+    .container {
+      .hero-text-box {
+        .hero-heading {
+          font-size: 2.375rem;
+          line-height: 3.0875rem;
+          letter-spacing: -0.32px;
+        }
+
+        .hero-paragraph {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
       }
     }
   }
