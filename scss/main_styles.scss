@@ -166,7 +166,38 @@ img {
   }
 }
 
+// Logos
+
+#logos {
+  .container {
+    .logos-container {
+      border-top: 1px solid $neutral-alto;
+      border-bottom: 1px solid $neutral-alto;
+      padding: 2.4375rem 0;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      align-items: center;
+      grid-gap: 7.875rem;
+    }
+  }
+}
+
 // Media queries
+
+// Desktop (1280px)
+
+@media (max-width: 1280px) {
+  // Logos
+
+  #logos {
+    .container {
+      .logos-container {
+        padding: 2.4375rem 0;
+        grid-gap: 4.5rem;
+      }
+    }
+  }
+}
 
 // Tablet (1024px)
 
@@ -226,6 +257,17 @@ img {
       }
     }
   }
+
+  // Logos
+
+  #logos {
+    .container {
+      .logos-container {
+        padding: 2.1875rem 0;
+        grid-gap: 3.25rem;
+      }
+    }
+  }
 }
 
 // Mobile (640px)
@@ -261,6 +303,19 @@ img {
           font-size: 1rem;
           line-height: 1.5rem;
         }
+      }
+    }
+  }
+
+  // Logos
+
+  #logos {
+    .container {
+      .logos-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.5625rem 0;
+        column-gap: 3.28125rem;
+        row-gap: 2.625rem;
       }
     }
   }

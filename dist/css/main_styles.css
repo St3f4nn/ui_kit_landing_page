@@ -137,6 +137,20 @@ img {
             background-color: #009379;
             color: #fff; }
 
+#logos .container .logos-container {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 2.4375rem 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  grid-gap: 7.875rem; }
+
+@media (max-width: 1280px) {
+  #logos .container .logos-container {
+    padding: 2.4375rem 0;
+    grid-gap: 4.5rem; } }
+
 @media (max-width: 1024px) {
   #main-header .container {
     padding: 0 1.875rem; }
@@ -163,7 +177,10 @@ img {
           justify-content: center;
           gap: 0; }
           #hero .container .hero-text-box .hero-cta .hero-cta-btn {
-            display: none; } }
+            display: none; }
+  #logos .container .logos-container {
+    padding: 2.1875rem 0;
+    grid-gap: 3.25rem; } }
 
 @media (max-width: 640px) {
   #main-header .container {
@@ -179,4 +196,9 @@ img {
       letter-spacing: -0.32px; }
     #hero .container .hero-text-box .hero-paragraph {
       font-size: 1rem;
-      line-height: 1.5rem; } }
+      line-height: 1.5rem; }
+  #logos .container .logos-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5625rem 0;
+    column-gap: 3.28125rem;
+    row-gap: 2.625rem; } }
