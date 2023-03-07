@@ -20,13 +20,35 @@
     background-color: #009379;
     color: #fff; }
 
+.section-heading {
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 3.0875rem;
+  text-align: center;
+  letter-spacing: -0.32px; }
+
+.section-paragraph-primary,
+.section-paragraph-secondary {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #2d2d2d;
+  text-align: center; }
+
+.section-paragraph-primary {
+  line-height: 1.5rem; }
+
+.section-paragraph-secondary {
+  line-height: 1.3rem; }
+
 @media (max-width: 1024px) {
   .container {
     padding: 0 2.1875rem; } }
 
 @media (max-width: 640px) {
   .container {
-    padding: 0 1.875rem; } }
+    padding: 0 1.875rem; }
+  .section-heading {
+    font-weight: 600; } }
 
 * {
   margin: 0;
@@ -146,6 +168,70 @@ img {
   align-items: center;
   grid-gap: 7.875rem; }
 
+#features {
+  padding: 10rem 0; }
+  #features .container header .section-paragraph-primary {
+    margin-top: 1.25rem; }
+  #features .container .features-container {
+    margin-top: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.875rem; }
+    #features .container .features-container .features-item {
+      padding: 2.4375rem 1.8125rem;
+      border: 1px solid #d8d8d8;
+      background-color: #fff;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      #features .container .features-container .features-item .features-item-img {
+        width: 82px;
+        height: 82px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        #features .container .features-container .features-item .features-item-img img {
+          width: 42px; }
+        #features .container .features-container .features-item .features-item-img-pink {
+          background-color: rgba(255, 98, 80, 0.2); }
+        #features .container .features-container .features-item .features-item-img-green {
+          background-color: rgba(0, 147, 121, 0.2); }
+        #features .container .features-container .features-item .features-item-img-yellow {
+          background-color: rgba(248, 213, 126, 0.2); }
+      #features .container .features-container .features-item .features-item-heading {
+        font-weight: 600;
+        font-size: 1.75rem;
+        line-height: 2.275rem;
+        letter-spacing: -0.16px;
+        color: #2d2d2d;
+        margin-top: 1.875rem;
+        text-align: center; }
+      #features .container .features-container .features-item .features-item-paragraph {
+        margin-top: 1.5rem; }
+      #features .container .features-container .features-item .features-item-link {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        position: relative;
+        display: inline-block;
+        margin-top: 2.0625rem; }
+        #features .container .features-container .features-item .features-item-link::after {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url("../assets/images/global/arrow_right_green.svg") no-repeat center center/cover;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-left: 0.5rem;
+          transition: all 0.3s ease-out; }
+        #features .container .features-container .features-item .features-item-link:hover::after {
+          margin-left: 1rem; }
+
 @media (max-width: 1280px) {
   #logos .container .logos-container {
     padding: 2.4375rem 0;
@@ -180,7 +266,17 @@ img {
             display: none; }
   #logos .container .logos-container {
     padding: 2.1875rem 0;
-    grid-gap: 3.25rem; } }
+    grid-gap: 3.25rem; }
+  #features {
+    padding: 6.25rem 0; }
+    #features .container .features-container {
+      margin-top: 2.5rem;
+      grid-template-columns: 1fr;
+      grid-gap: 1.25rem; }
+      #features .container .features-container .features-item .features-item-heading {
+        font-size: 1.3125rem;
+        line-height: 1.70625rem;
+        letter-spacing: normal; } }
 
 @media (max-width: 640px) {
   #main-header .container {
@@ -201,4 +297,13 @@ img {
     grid-template-columns: repeat(3, 1fr);
     padding: 1.5625rem 0;
     column-gap: 3.28125rem;
-    row-gap: 2.625rem; } }
+    row-gap: 2.625rem; }
+  #features {
+    padding: 5rem 0; }
+    #features .container .features-container {
+      margin-top: 1.875rem;
+      grid-gap: 1.875rem; }
+      #features .container .features-container .features-item .features-item-heading {
+        font-size: 1.75rem;
+        line-height: 2.275rem;
+        letter-spacing: -0.16px; } }
