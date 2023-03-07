@@ -141,37 +141,37 @@ img {
       #main-header .container nav ul li .btn-secondary {
         margin-left: 3.125rem; }
 
-#hero {
+main #hero {
   padding-top: 10rem;
   padding-bottom: 8.4375rem; }
-  #hero .container {
+  main #hero .container {
     display: flex;
     align-items: start; }
-    #hero .container .hero-img {
+    main #hero .container .hero-img {
       max-width: 450px; }
-    #hero .container .hero-text-box {
+    main #hero .container .hero-text-box {
       padding-top: 2.875rem;
       margin-right: 4.5rem; }
-      #hero .container .hero-text-box .hero-heading {
+      main #hero .container .hero-text-box .hero-heading {
         font-weight: 700;
         font-size: 4.1875rem;
         line-height: 5.44375rem;
         letter-spacing: -0.4px;
         color: #2d2d2d; }
-      #hero .container .hero-text-box .hero-paragraph {
+      main #hero .container .hero-text-box .hero-paragraph {
         font-weight: 400;
         font-size: 1.3125rem;
         line-height: 1.96875rem;
         margin-top: 1.25rem; }
-      #hero .container .hero-text-box .hero-cta {
+      main #hero .container .hero-text-box .hero-cta {
         display: flex;
         align-items: center;
         gap: 1.125rem;
         margin-top: 2.5rem; }
-        #hero .container .hero-text-box .hero-cta .btn-primary {
+        main #hero .container .hero-text-box .hero-cta .btn-primary {
           padding-left: 4.875rem;
           position: relative; }
-          #hero .container .hero-text-box .hero-cta .btn-primary::before {
+          main #hero .container .hero-text-box .hero-cta .btn-primary::before {
             content: "";
             width: 20px;
             height: 20px;
@@ -179,15 +179,15 @@ img {
             position: absolute;
             top: 20px;
             left: 50px; }
-        #hero .container .hero-text-box .hero-cta .hero-cta-btn {
+        main #hero .container .hero-text-box .hero-cta .hero-cta-btn {
           padding: 1.0625rem 3.0625rem;
           background-color: #fff;
           border: 1px solid #009379; }
-          #hero .container .hero-text-box .hero-cta .hero-cta-btn:hover {
+          main #hero .container .hero-text-box .hero-cta .hero-cta-btn:hover {
             background-color: #009379;
             color: #fff; }
 
-#logos .container .logos-container {
+main #logos .container .logos-container {
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
   padding: 2.4375rem 0;
@@ -196,16 +196,16 @@ img {
   align-items: center;
   grid-gap: 7.875rem; }
 
-#features {
+main #features {
   padding: 10rem 0; }
-  #features .container header .section-paragraph-primary {
+  main #features .container header .section-paragraph-primary {
     margin-top: 1.25rem; }
-  #features .container .features-container {
+  main #features .container .features-container {
     margin-top: 3.75rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.875rem; }
-    #features .container .features-container .features-item {
+    main #features .container .features-container .features-item {
       padding: 2.4375rem 1.8125rem;
       border: 1px solid #d8d8d8;
       background-color: #fff;
@@ -215,22 +215,22 @@ img {
       align-items: center;
       text-align: center;
       box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05); }
-      #features .container .features-container .features-item .features-item-img {
+      main #features .container .features-container .features-item .features-item-img {
         width: 82px;
         height: 82px;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center; }
-        #features .container .features-container .features-item .features-item-img img {
+        main #features .container .features-container .features-item .features-item-img img {
           width: 42px; }
-        #features .container .features-container .features-item .features-item-img-pink {
+        main #features .container .features-container .features-item .features-item-img-pink {
           background-color: rgba(255, 98, 80, 0.2); }
-        #features .container .features-container .features-item .features-item-img-green {
+        main #features .container .features-container .features-item .features-item-img-green {
           background-color: rgba(0, 147, 121, 0.2); }
-        #features .container .features-container .features-item .features-item-img-yellow {
+        main #features .container .features-container .features-item .features-item-img-yellow {
           background-color: rgba(248, 213, 126, 0.2); }
-      #features .container .features-container .features-item .features-item-heading {
+      main #features .container .features-container .features-item .features-item-heading {
         font-weight: 600;
         font-size: 1.75rem;
         line-height: 2.275rem;
@@ -238,16 +238,16 @@ img {
         color: #2d2d2d;
         margin-top: 1.875rem;
         text-align: center; }
-      #features .container .features-container .features-item .features-item-paragraph {
+      main #features .container .features-container .features-item .features-item-paragraph {
         margin-top: 1.5rem; }
-      #features .container .features-container .features-item .features-item-link {
+      main #features .container .features-container .features-item .features-item-link {
         font-weight: 600;
         font-size: 1rem;
         line-height: 1.5rem;
         position: relative;
         display: inline-block;
         margin-top: 2.0625rem; }
-        #features .container .features-container .features-item .features-item-link::after {
+        main #features .container .features-container .features-item .features-item-link::after {
           content: "";
           display: inline-block;
           width: 20px;
@@ -258,21 +258,21 @@ img {
           transform: translateY(-50%);
           margin-left: 0.5rem;
           transition: all 0.3s ease-out; }
-        #features .container .features-container .features-item .features-item-link:hover::after {
+        main #features .container .features-container .features-item .features-item-link:hover::after {
           margin-left: 1rem; }
 
-#cta .container {
+main #cta .container {
   display: flex; }
-  #cta .container img {
-    max-width: 540px; }
-  #cta .container .cta-text-box {
-    padding-top: 4.25rem;
-    padding-left: 3.75rem; }
-    #cta .container .cta-text-box .btn-primary {
+  main #cta .container img {
+    max-width: 540px;
+    object-fit: cover; }
+  main #cta .container .cta-text-box {
+    padding: 4.25rem 0 4.25rem 3.75rem; }
+    main #cta .container .cta-text-box .btn-primary {
       margin-top: 2.5rem;
       padding-right: 4.875rem;
       position: relative; }
-      #cta .container .cta-text-box .btn-primary::after {
+      main #cta .container .cta-text-box .btn-primary::after {
         content: "";
         display: inline-block;
         width: 20px;
@@ -283,13 +283,47 @@ img {
         transform: translateY(-50%);
         margin-left: 0.5rem;
         transition: all 0.3s ease-out; }
-      #cta .container .cta-text-box .btn-primary:hover::after {
+      main #cta .container .cta-text-box .btn-primary:hover::after {
         margin-left: 1rem; }
 
+main #stats {
+  padding: 10rem 0; }
+  main #stats .container header .section-paragraph-secondary {
+    margin-top: 1.25rem; }
+  main #stats .container .stats-container {
+    margin-top: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.875rem; }
+    main #stats .container .stats-container .stats-item {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.3125rem;
+      border-bottom: 4px solid #f2bfaf;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 3rem 1rem 2.75rem;
+      box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05); }
+      main #stats .container .stats-container .stats-item .stats-item-heading {
+        font-weight: 700;
+        font-size: 2.375rem;
+        line-height: 3.0875rem;
+        letter-spacing: -0.32px;
+        color: #2d2d2d; }
+
 @media (max-width: 1280px) {
-  #logos .container .logos-container {
+  main #logos .container .logos-container {
     padding: 2.4375rem 0;
-    grid-gap: 4.5rem; } }
+    grid-gap: 4.5rem; }
+  main #cta .container img {
+    max-width: 50%;
+    padding-right: 1.25rem;
+    overflow: visible; }
+  main #cta .container .cta-text-box {
+    padding: 3rem 0; } }
 
 @media (max-width: 1024px) {
   #main-header .container {
@@ -299,81 +333,93 @@ img {
       display: none; }
     #main-header .container nav ul li .btn-secondary {
       margin-left: 0; }
-  #hero {
+  main #hero {
     padding-top: 6.25rem;
     padding-bottom: 5.125rem; }
-    #hero .container {
+    main #hero .container {
       flex-direction: column;
       align-items: center;
       text-align: center; }
-      #hero .container .hero-img {
+      main #hero .container .hero-img {
         max-width: 320px;
         margin-top: 2.5rem; }
-      #hero .container .hero-text-box {
+      main #hero .container .hero-text-box {
         padding-top: 0;
         margin-right: 0; }
-        #hero .container .hero-text-box .hero-cta {
+        main #hero .container .hero-text-box .hero-cta {
           margin-top: 1.875rem;
           justify-content: center;
           gap: 0; }
-          #hero .container .hero-text-box .hero-cta .hero-cta-btn {
+          main #hero .container .hero-text-box .hero-cta .hero-cta-btn {
             display: none; }
-  #logos .container .logos-container {
+  main #logos .container .logos-container {
     padding: 2.1875rem 0;
     grid-gap: 3.25rem; }
-  #features {
+  main #features {
     padding: 6.25rem 0; }
-    #features .container .features-container {
+    main #features .container .features-container {
       margin-top: 2.5rem;
       grid-template-columns: 1fr;
       grid-gap: 1.25rem; }
-      #features .container .features-container .features-item .features-item-heading {
+      main #features .container .features-container .features-item .features-item-heading {
         font-size: 1.3125rem;
         line-height: 1.70625rem;
         letter-spacing: normal; }
-  #cta .container img {
-    max-width: 50%;
-    padding-right: 1.25rem;
-    object-fit: cover; }
-  #cta .container .cta-text-box {
-    padding: 0; } }
+  main #cta .container .cta-text-box {
+    padding: 0; }
+  main #stats {
+    padding: 6.25rem 0; }
+    main #stats .container .stats-container {
+      margin-top: 2.5rem;
+      grid-gap: 1.25rem; }
+      main #stats .container .stats-container .stats-item {
+        padding: 1.875rem 1rem 1.625rem; }
+        main #stats .container .stats-container .stats-item .stats-item-heading {
+          font-weight: 600;
+          font-size: 1.75rem;
+          line-height: 2.275rem;
+          letter-spacing: -0.16px; } }
 
 @media (max-width: 640px) {
   #main-header .container {
     justify-content: center; }
     #main-header .container nav {
       display: none; }
-  #hero {
+  main #hero {
     padding-top: 1.875rem;
     padding-bottom: 3.875rem; }
-    #hero .container .hero-text-box .hero-heading {
+    main #hero .container .hero-text-box .hero-heading {
       font-size: 2.375rem;
       line-height: 3.0875rem;
       letter-spacing: -0.32px; }
-    #hero .container .hero-text-box .hero-paragraph {
+    main #hero .container .hero-text-box .hero-paragraph {
       font-size: 1rem;
       line-height: 1.5rem; }
-  #logos .container .logos-container {
+  main #logos .container .logos-container {
     grid-template-columns: repeat(3, 1fr);
     padding: 1.5625rem 0;
     column-gap: 3.28125rem;
     row-gap: 2.625rem; }
-  #features {
+  main #features {
     padding: 5rem 0; }
-    #features .container .features-container {
+    main #features .container .features-container {
       margin-top: 1.875rem;
       grid-gap: 1.875rem; }
-      #features .container .features-container .features-item .features-item-heading {
+      main #features .container .features-container .features-item .features-item-heading {
         font-size: 1.75rem;
         line-height: 2.275rem;
         letter-spacing: -0.16px; }
-  #cta .container {
+  main #cta .container {
     flex-direction: column; }
-    #cta .container img {
+    main #cta .container img {
       max-width: 100%;
       padding: 0; }
-    #cta .container .cta-text-box {
+    main #cta .container .cta-text-box {
       padding-top: 1.25rem;
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+  main #stats {
+    padding: 5rem 0; }
+    main #stats .container .stats-container {
+      grid-template-columns: repeat(2, 1fr); } }
