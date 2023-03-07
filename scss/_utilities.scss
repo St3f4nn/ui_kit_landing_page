@@ -40,6 +40,14 @@
   letter-spacing: -0.32px;
 }
 
+.cta-heading {
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+  letter-spacing: -0.32px;
+  color: $neutral-mine-shaft;
+}
+
 // Paragraphs
 
 .section-paragraph-primary,
@@ -58,6 +66,14 @@
   line-height: 1.3rem;
 }
 
+.cta-paragraph {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.96875rem;
+  color: $neutral-mine-shaft;
+  margin-top: 1.25rem;
+}
+
 // Media queries
 
 // Tablet (1024px)
@@ -67,6 +83,20 @@
 
   .container {
     padding: 0 2.1875rem;
+  }
+
+  // Headings
+
+  .cta-heading {
+    font-size: 2.375rem;
+    line-height: 3.0875rem;
+  }
+
+  // Paragraphs
+
+  .cta-paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -83,5 +113,19 @@
 
   .section-heading {
     font-weight: 600;
+  }
+
+  .cta-heading {
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.275rem;
+    letter-spacing: -0.16px;
+    text-align: center;
+  }
+
+  // Paragraphs
+
+  .cta-paragraph {
+    text-align: center;
   }
 }
