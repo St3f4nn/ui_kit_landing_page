@@ -152,7 +152,7 @@ main {
             }
           }
 
-          .hero-cta-btn {
+          &-btn {
             padding: 1.0625rem 3.0625rem;
             background-color: #fff;
             border: 1px solid $cta-observatory;
@@ -212,7 +212,7 @@ main {
           text-align: center;
           box-shadow: $main-box-shadow;
 
-          .features-item-img {
+          &-img {
             width: 82px;
             height: 82px;
             border-radius: 20px;
@@ -237,7 +237,7 @@ main {
             }
           }
 
-          .features-item-heading {
+          &-heading {
             font-weight: 600;
             font-size: 1.75rem;
             line-height: 2.275rem;
@@ -247,11 +247,11 @@ main {
             text-align: center;
           }
 
-          .features-item-paragraph {
+          &-paragraph {
             margin-top: 1.5rem;
           }
 
-          .features-item-link {
+          &-link {
             font-weight: 600;
             font-size: 1rem;
             line-height: 1.5rem;
@@ -354,12 +354,88 @@ main {
           padding: 3rem 1rem 2.75rem;
           box-shadow: $main-box-shadow;
 
-          .stats-item-heading {
+          &-heading {
             font-weight: 700;
             font-size: 2.375rem;
             line-height: 3.0875rem;
             letter-spacing: -0.32px;
             color: $neutral-mine-shaft;
+          }
+        }
+      }
+    }
+  }
+
+  // Testimonials
+
+  #testimonials {
+    .container {
+      header {
+        .section-paragraph-secondary {
+          margin-top: 1.25rem;
+        }
+      }
+
+      .testimonials-container {
+        margin-top: 3.75rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.875rem;
+
+        .testimonial {
+          border-radius: 20px;
+          background-color: #fff;
+          border: 1px solid $neutral-alto;
+          padding: 2.5rem 1.875rem;
+          box-shadow: $main-box-shadow;
+          display: grid;
+          grid-template-columns: 1fr;
+
+          &-customer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            &-img {
+              width: 56px;
+              height: 56px;
+              border-radius: 50%;
+            }
+
+            &-name {
+              font-weight: 600;
+              font-size: 1.3125rem;
+              line-height: 1.70625rem;
+              color: #111827;
+              margin-top: 1rem;
+            }
+
+            &-job {
+              font-weight: normal;
+              font-size: 0.875rem;
+              line-height: 1.4rem;
+              color: #374151;
+              margin-top: 0.375rem;
+            }
+          }
+
+          &-info {
+            margin-top: 1.875rem;
+
+            &-rating {
+              display: flex;
+              justify-content: center;
+              gap: 0.3125rem;
+              margin-top: 1.875rem;
+
+              .star {
+                &-rated {
+                  fill: #f8d57e;
+                }
+              }
+            }
           }
         }
       }
@@ -485,7 +561,7 @@ main {
           grid-gap: 1.25rem;
 
           .features-item {
-            .features-item-heading {
+            &-heading {
               font-size: 1.3125rem;
               line-height: 1.70625rem;
               letter-spacing: normal;
@@ -518,11 +594,44 @@ main {
           .stats-item {
             padding: 1.875rem 1rem 1.625rem;
 
-            .stats-item-heading {
+            &-heading {
               font-weight: 600;
               font-size: 1.75rem;
               line-height: 2.275rem;
               letter-spacing: -0.16px;
+            }
+          }
+        }
+      }
+    }
+
+    // Testimonials
+
+    #testimonials {
+      .container {
+        .testimonials-container {
+          margin-top: 1.875rem;
+          grid-template-columns: 1fr;
+          grid-gap: 1.25rem;
+
+          .testimonial {
+            grid-template-columns: repeat(2, 1fr);
+
+            &-customer {
+              padding-right: 1.875rem;
+            }
+
+            &-info {
+              margin-top: 0;
+
+              .section-paragraph-primary {
+                text-align: left;
+              }
+
+              &-rating {
+                justify-content: start;
+                margin-top: 1.5rem;
+              }
             }
           }
         }
@@ -593,7 +702,7 @@ main {
           grid-gap: 1.875rem;
 
           .features-item {
-            .features-item-heading {
+            &-heading {
               font-size: 1.75rem;
               line-height: 2.275rem;
               letter-spacing: -0.16px;
@@ -631,6 +740,37 @@ main {
       .container {
         .stats-container {
           grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+
+    // Testimonials
+
+    #testimonials {
+      .container {
+        .testimonials-container {
+          grid-gap: 1.875rem;
+
+          .testimonial {
+            grid-template-columns: 1fr;
+
+            &-customer {
+              padding: 0;
+            }
+
+            &-info {
+              margin-top: 1.875rem;
+
+              .section-paragraph-primary {
+                text-align: center;
+              }
+
+              &-rating {
+                justify-content: center;
+                margin-top: 1.875rem;
+              }
+            }
+          }
         }
       }
     }

@@ -179,11 +179,11 @@ main #hero {
             position: absolute;
             top: 20px;
             left: 50px; }
-        main #hero .container .hero-text-box .hero-cta .hero-cta-btn {
+        main #hero .container .hero-text-box .hero-cta-btn {
           padding: 1.0625rem 3.0625rem;
           background-color: #fff;
           border: 1px solid #009379; }
-          main #hero .container .hero-text-box .hero-cta .hero-cta-btn:hover {
+          main #hero .container .hero-text-box .hero-cta-btn:hover {
             background-color: #009379;
             color: #fff; }
 
@@ -215,22 +215,22 @@ main #features {
       align-items: center;
       text-align: center;
       box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05); }
-      main #features .container .features-container .features-item .features-item-img {
+      main #features .container .features-container .features-item-img {
         width: 82px;
         height: 82px;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center; }
-        main #features .container .features-container .features-item .features-item-img img {
+        main #features .container .features-container .features-item-img img {
           width: 42px; }
-        main #features .container .features-container .features-item .features-item-img-pink {
+        main #features .container .features-container .features-item-img-pink {
           background-color: rgba(255, 98, 80, 0.2); }
-        main #features .container .features-container .features-item .features-item-img-green {
+        main #features .container .features-container .features-item-img-green {
           background-color: rgba(0, 147, 121, 0.2); }
-        main #features .container .features-container .features-item .features-item-img-yellow {
+        main #features .container .features-container .features-item-img-yellow {
           background-color: rgba(248, 213, 126, 0.2); }
-      main #features .container .features-container .features-item .features-item-heading {
+      main #features .container .features-container .features-item-heading {
         font-weight: 600;
         font-size: 1.75rem;
         line-height: 2.275rem;
@@ -238,16 +238,16 @@ main #features {
         color: #2d2d2d;
         margin-top: 1.875rem;
         text-align: center; }
-      main #features .container .features-container .features-item .features-item-paragraph {
+      main #features .container .features-container .features-item-paragraph {
         margin-top: 1.5rem; }
-      main #features .container .features-container .features-item .features-item-link {
+      main #features .container .features-container .features-item-link {
         font-weight: 600;
         font-size: 1rem;
         line-height: 1.5rem;
         position: relative;
         display: inline-block;
         margin-top: 2.0625rem; }
-        main #features .container .features-container .features-item .features-item-link::after {
+        main #features .container .features-container .features-item-link::after {
           content: "";
           display: inline-block;
           width: 20px;
@@ -258,7 +258,7 @@ main #features {
           transform: translateY(-50%);
           margin-left: 0.5rem;
           transition: all 0.3s ease-out; }
-        main #features .container .features-container .features-item .features-item-link:hover::after {
+        main #features .container .features-container .features-item-link:hover::after {
           margin-left: 1rem; }
 
 main #cta .container {
@@ -307,12 +307,60 @@ main #stats {
       border-top-right-radius: 20px;
       padding: 3rem 1rem 2.75rem;
       box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05); }
-      main #stats .container .stats-container .stats-item .stats-item-heading {
+      main #stats .container .stats-container .stats-item-heading {
         font-weight: 700;
         font-size: 2.375rem;
         line-height: 3.0875rem;
         letter-spacing: -0.32px;
         color: #2d2d2d; }
+
+main #testimonials .container header .section-paragraph-secondary {
+  margin-top: 1.25rem; }
+
+main #testimonials .container .testimonials-container {
+  margin-top: 3.75rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.875rem; }
+  main #testimonials .container .testimonials-container .testimonial {
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    padding: 2.5rem 1.875rem;
+    box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05);
+    display: grid;
+    grid-template-columns: 1fr; }
+    main #testimonials .container .testimonials-container .testimonial-customer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      main #testimonials .container .testimonials-container .testimonial-customer-img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%; }
+      main #testimonials .container .testimonials-container .testimonial-customer-name {
+        font-weight: 600;
+        font-size: 1.3125rem;
+        line-height: 1.70625rem;
+        color: #111827;
+        margin-top: 1rem; }
+      main #testimonials .container .testimonials-container .testimonial-customer-job {
+        font-weight: normal;
+        font-size: 0.875rem;
+        line-height: 1.4rem;
+        color: #374151;
+        margin-top: 0.375rem; }
+    main #testimonials .container .testimonials-container .testimonial-info {
+      margin-top: 1.875rem; }
+      main #testimonials .container .testimonials-container .testimonial-info-rating {
+        display: flex;
+        justify-content: center;
+        gap: 0.3125rem;
+        margin-top: 1.875rem; }
+        main #testimonials .container .testimonials-container .testimonial-info-rating .star-rated {
+          fill: #f8d57e; }
 
 @media (max-width: 1280px) {
   main #logos .container .logos-container {
@@ -361,7 +409,7 @@ main #stats {
       margin-top: 2.5rem;
       grid-template-columns: 1fr;
       grid-gap: 1.25rem; }
-      main #features .container .features-container .features-item .features-item-heading {
+      main #features .container .features-container .features-item-heading {
         font-size: 1.3125rem;
         line-height: 1.70625rem;
         letter-spacing: normal; }
@@ -374,11 +422,26 @@ main #stats {
       grid-gap: 1.25rem; }
       main #stats .container .stats-container .stats-item {
         padding: 1.875rem 1rem 1.625rem; }
-        main #stats .container .stats-container .stats-item .stats-item-heading {
+        main #stats .container .stats-container .stats-item-heading {
           font-weight: 600;
           font-size: 1.75rem;
           line-height: 2.275rem;
-          letter-spacing: -0.16px; } }
+          letter-spacing: -0.16px; }
+  main #testimonials .container .testimonials-container {
+    margin-top: 1.875rem;
+    grid-template-columns: 1fr;
+    grid-gap: 1.25rem; }
+    main #testimonials .container .testimonials-container .testimonial {
+      grid-template-columns: repeat(2, 1fr); }
+      main #testimonials .container .testimonials-container .testimonial-customer {
+        padding-right: 1.875rem; }
+      main #testimonials .container .testimonials-container .testimonial-info {
+        margin-top: 0; }
+        main #testimonials .container .testimonials-container .testimonial-info .section-paragraph-primary {
+          text-align: left; }
+        main #testimonials .container .testimonials-container .testimonial-info-rating {
+          justify-content: start;
+          margin-top: 1.5rem; } }
 
 @media (max-width: 640px) {
   #main-header .container {
@@ -405,7 +468,7 @@ main #stats {
     main #features .container .features-container {
       margin-top: 1.875rem;
       grid-gap: 1.875rem; }
-      main #features .container .features-container .features-item .features-item-heading {
+      main #features .container .features-container .features-item-heading {
         font-size: 1.75rem;
         line-height: 2.275rem;
         letter-spacing: -0.16px; }
@@ -422,4 +485,17 @@ main #stats {
   main #stats {
     padding: 5rem 0; }
     main #stats .container .stats-container {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr); }
+  main #testimonials .container .testimonials-container {
+    grid-gap: 1.875rem; }
+    main #testimonials .container .testimonials-container .testimonial {
+      grid-template-columns: 1fr; }
+      main #testimonials .container .testimonials-container .testimonial-customer {
+        padding: 0; }
+      main #testimonials .container .testimonials-container .testimonial-info {
+        margin-top: 1.875rem; }
+        main #testimonials .container .testimonials-container .testimonial-info .section-paragraph-primary {
+          text-align: center; }
+        main #testimonials .container .testimonials-container .testimonial-info-rating {
+          justify-content: center;
+          margin-top: 1.875rem; } }
