@@ -45,7 +45,8 @@
   line-height: 1.5rem; }
 
 .section-paragraph-secondary {
-  line-height: 1.3rem; }
+  line-height: 1.3rem;
+  margin-top: 1.25rem; }
 
 .cta-paragraph {
   font-weight: 400;
@@ -197,7 +198,7 @@ main #logos .container .logos-container {
   grid-gap: 7.875rem; }
 
 main #features {
-  padding: 10rem 0; }
+  margin-top: 10rem; }
   main #features .container header .section-paragraph-primary {
     margin-top: 1.25rem; }
   main #features .container .features-container {
@@ -261,35 +262,35 @@ main #features {
         main #features .container .features-container .features-item-link:hover::after {
           margin-left: 1rem; }
 
-main #cta .container {
-  display: flex; }
-  main #cta .container img {
-    max-width: 540px;
-    object-fit: cover; }
-  main #cta .container .cta-text-box {
-    padding: 4.25rem 0 4.25rem 3.75rem; }
-    main #cta .container .cta-text-box .btn-primary {
-      margin-top: 2.5rem;
-      padding-right: 4.875rem;
-      position: relative; }
-      main #cta .container .cta-text-box .btn-primary::after {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: url("../assets/images/global/arrow_right_white.svg") no-repeat center center/cover;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 0.5rem;
-        transition: all 0.3s ease-out; }
-      main #cta .container .cta-text-box .btn-primary:hover::after {
-        margin-left: 1rem; }
+main #cta {
+  margin-top: 10rem; }
+  main #cta .container {
+    display: flex; }
+    main #cta .container img {
+      max-width: 540px;
+      object-fit: cover; }
+    main #cta .container .cta-text-box {
+      padding: 4.25rem 0 4.25rem 3.75rem; }
+      main #cta .container .cta-text-box .btn-primary {
+        margin-top: 2.5rem;
+        padding-right: 4.875rem;
+        position: relative; }
+        main #cta .container .cta-text-box .btn-primary::after {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url("../assets/images/global/arrow_right_white.svg") no-repeat center center/cover;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-left: 0.5rem;
+          transition: all 0.3s ease-out; }
+        main #cta .container .cta-text-box .btn-primary:hover::after {
+          margin-left: 1rem; }
 
 main #stats {
-  padding: 10rem 0; }
-  main #stats .container header .section-paragraph-secondary {
-    margin-top: 1.25rem; }
+  margin-top: 10rem; }
   main #stats .container .stats-container {
     margin-top: 3.75rem;
     display: grid;
@@ -313,54 +314,144 @@ main #stats {
         line-height: 3.0875rem;
         letter-spacing: -0.32px;
         color: #2d2d2d; }
+      main #stats .container .stats-container .stats-item-paragraph {
+        margin-top: 0; }
 
-main #testimonials .container header .section-paragraph-secondary {
-  margin-top: 1.25rem; }
-
-main #testimonials .container .testimonials-container {
-  margin-top: 3.75rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.875rem; }
-  main #testimonials .container .testimonials-container .testimonial {
-    border-radius: 20px;
-    background-color: #fff;
-    border: 1px solid #d8d8d8;
-    padding: 2.5rem 1.875rem;
-    box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05);
+main #testimonials {
+  margin-top: 10rem; }
+  main #testimonials .container .testimonials-container {
+    margin-top: 3.75rem;
     display: grid;
-    grid-template-columns: 1fr; }
-    main #testimonials .container .testimonials-container .testimonial-customer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center; }
-      main #testimonials .container .testimonials-container .testimonial-customer-img {
-        width: 56px;
-        height: 56px;
-        border-radius: 50%; }
-      main #testimonials .container .testimonials-container .testimonial-customer-name {
-        font-weight: 600;
-        font-size: 1.3125rem;
-        line-height: 1.70625rem;
-        color: #111827;
-        margin-top: 1rem; }
-      main #testimonials .container .testimonials-container .testimonial-customer-job {
-        font-weight: normal;
-        font-size: 0.875rem;
-        line-height: 1.4rem;
-        color: #374151;
-        margin-top: 0.375rem; }
-    main #testimonials .container .testimonials-container .testimonial-info {
-      margin-top: 1.875rem; }
-      main #testimonials .container .testimonials-container .testimonial-info-rating {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.875rem; }
+    main #testimonials .container .testimonials-container .testimonial {
+      border-radius: 20px;
+      background-color: #fff;
+      border: 1px solid #d8d8d8;
+      padding: 2.4375rem 1.8125rem;
+      box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05);
+      display: grid;
+      grid-template-columns: 1fr; }
+      main #testimonials .container .testimonials-container .testimonial-customer {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 0.3125rem;
+        text-align: center; }
+        main #testimonials .container .testimonials-container .testimonial-customer-img {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%; }
+        main #testimonials .container .testimonials-container .testimonial-customer-name {
+          font-weight: 600;
+          font-size: 1.3125rem;
+          line-height: 1.70625rem;
+          color: #111827;
+          margin-top: 1rem; }
+        main #testimonials .container .testimonials-container .testimonial-customer-job {
+          font-weight: normal;
+          font-size: 0.875rem;
+          line-height: 1.4rem;
+          color: #374151;
+          margin-top: 0.375rem; }
+      main #testimonials .container .testimonials-container .testimonial-info {
         margin-top: 1.875rem; }
-        main #testimonials .container .testimonials-container .testimonial-info-rating .star-rated {
-          fill: #f8d57e; }
+        main #testimonials .container .testimonials-container .testimonial-info-rating {
+          display: flex;
+          justify-content: center;
+          gap: 0.3125rem;
+          margin-top: 1.875rem; }
+          main #testimonials .container .testimonials-container .testimonial-info-rating .star-rated {
+            fill: #f8d57e; }
+
+main #pricing {
+  margin-top: 10rem; }
+  main #pricing .container .pricing-container {
+    margin-top: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.875rem; }
+    main #pricing .container .pricing-container .pricing-card {
+      border: 1px solid #d8d8d8;
+      background-color: #fff;
+      padding: 2.4375rem 1.8125rem;
+      border-radius: 20px;
+      box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05);
+      color: #2d2d2d; }
+      main #pricing .container .pricing-container .pricing-card-plan {
+        font-weight: 400;
+        font-size: 1.3125rem;
+        line-height: 1.96875rem; }
+      main #pricing .container .pricing-container .pricing-card-price {
+        font-weight: 700;
+        font-size: 3.125rem;
+        line-height: 4.0625rem;
+        letter-spacing: -0.32px;
+        margin-top: 0.375rem; }
+        main #pricing .container .pricing-container .pricing-card-price span {
+          font-weight: 700;
+          font-family: "Mulish", sans-serif;
+          font-size: 1rem;
+          line-height: 1.6rem;
+          color: #3b3b3b; }
+      main #pricing .container .pricing-container .pricing-card-description {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin-top: 0.375rem; }
+      main #pricing .container .pricing-container .pricing-card ul {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; }
+        main #pricing .container .pricing-container .pricing-card ul .pricing-card-feature {
+          font-weight: 700;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          display: flex;
+          align-items: start;
+          gap: 0.75rem; }
+          main #pricing .container .pricing-container .pricing-card ul .pricing-card-feature-checkmark {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0; }
+      main #pricing .container .pricing-container .pricing-card .btn {
+        background-color: #e5f4f2;
+        width: 100%;
+        text-align: center;
+        margin-top: 1.875rem; }
+        main #pricing .container .pricing-container .pricing-card .btn:hover {
+          background-color: #009379;
+          color: #fff; }
+    main #pricing .container .pricing-container #pricing-card-special {
+      background-color: #009379;
+      color: #fff;
+      border-color: #009379; }
+      main #pricing .container .pricing-container #pricing-card-special .pricing-card-price span {
+        color: inherit; }
+      main #pricing .container .pricing-container #pricing-card-special .btn {
+        background-color: #fff;
+        position: relative;
+        padding-right: 4.875rem; }
+        main #pricing .container .pricing-container #pricing-card-special .btn:hover {
+          background-color: #e5f4f2;
+          color: #009379; }
+        main #pricing .container .pricing-container #pricing-card-special .btn:hover {
+          background-color: #e5f4f2;
+          color: #009379; }
+        main #pricing .container .pricing-container #pricing-card-special .btn::after {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url("../assets/images/global/arrow_right_green.svg") no-repeat center center/cover;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-left: 0.5rem;
+          transition: all 0.3s ease-out; }
+        main #pricing .container .pricing-container #pricing-card-special .btn:hover::after {
+          margin-left: 1rem; }
 
 @media (max-width: 1280px) {
   main #logos .container .logos-container {
@@ -404,7 +495,7 @@ main #testimonials .container .testimonials-container {
     padding: 2.1875rem 0;
     grid-gap: 3.25rem; }
   main #features {
-    padding: 6.25rem 0; }
+    margin-top: 6.25rem; }
     main #features .container .features-container {
       margin-top: 2.5rem;
       grid-template-columns: 1fr;
@@ -413,10 +504,12 @@ main #testimonials .container .testimonials-container {
         font-size: 1.3125rem;
         line-height: 1.70625rem;
         letter-spacing: normal; }
-  main #cta .container .cta-text-box {
-    padding: 0; }
+  main #cta {
+    margin-top: 6.25rem; }
+    main #cta .container .cta-text-box {
+      padding: 0; }
   main #stats {
-    padding: 6.25rem 0; }
+    margin-top: 6.25rem; }
     main #stats .container .stats-container {
       margin-top: 2.5rem;
       grid-gap: 1.25rem; }
@@ -427,21 +520,34 @@ main #testimonials .container .testimonials-container {
           font-size: 1.75rem;
           line-height: 2.275rem;
           letter-spacing: -0.16px; }
-  main #testimonials .container .testimonials-container {
-    margin-top: 1.875rem;
-    grid-template-columns: 1fr;
-    grid-gap: 1.25rem; }
-    main #testimonials .container .testimonials-container .testimonial {
-      grid-template-columns: repeat(2, 1fr); }
-      main #testimonials .container .testimonials-container .testimonial-customer {
-        padding-right: 1.875rem; }
-      main #testimonials .container .testimonials-container .testimonial-info {
-        margin-top: 0; }
-        main #testimonials .container .testimonials-container .testimonial-info .section-paragraph-primary {
-          text-align: left; }
-        main #testimonials .container .testimonials-container .testimonial-info-rating {
-          justify-content: start;
-          margin-top: 1.5rem; } }
+  main #testimonials {
+    margin-top: 6.25rem; }
+    main #testimonials .container .testimonials-container {
+      margin-top: 1.875rem;
+      grid-template-columns: 1fr;
+      grid-gap: 1.25rem; }
+      main #testimonials .container .testimonials-container .testimonial {
+        grid-template-columns: repeat(2, 1fr); }
+        main #testimonials .container .testimonials-container .testimonial-customer {
+          padding-right: 1.875rem; }
+        main #testimonials .container .testimonials-container .testimonial-info {
+          margin-top: 0; }
+          main #testimonials .container .testimonials-container .testimonial-info .section-paragraph-primary {
+            text-align: left; }
+          main #testimonials .container .testimonials-container .testimonial-info-rating {
+            justify-content: start;
+            margin-top: 1.5rem; }
+  main #pricing {
+    margin-top: 6.25rem; }
+    main #pricing .container .pricing-container {
+      grid-template-columns: 1fr;
+      margin-top: 2.5rem; }
+      main #pricing .container .pricing-container .pricing-card-price {
+        margin-top: 0.625rem; }
+        main #pricing .container .pricing-container .pricing-card-price span {
+          display: block; }
+      main #pricing .container .pricing-container .pricing-card-description {
+        margin-top: 0.625rem; } }
 
 @media (max-width: 640px) {
   #main-header .container {
@@ -464,7 +570,7 @@ main #testimonials .container .testimonials-container {
     column-gap: 3.28125rem;
     row-gap: 2.625rem; }
   main #features {
-    padding: 5rem 0; }
+    margin-top: 5rem; }
     main #features .container .features-container {
       margin-top: 1.875rem;
       grid-gap: 1.875rem; }
@@ -472,30 +578,44 @@ main #testimonials .container .testimonials-container {
         font-size: 1.75rem;
         line-height: 2.275rem;
         letter-spacing: -0.16px; }
-  main #cta .container {
-    flex-direction: column; }
-    main #cta .container img {
-      max-width: 100%;
-      padding: 0; }
-    main #cta .container .cta-text-box {
-      padding-top: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
+  main #cta {
+    margin-top: 5rem; }
+    main #cta .container {
+      flex-direction: column; }
+      main #cta .container img {
+        max-width: 100%;
+        padding: 0; }
+      main #cta .container .cta-text-box {
+        padding-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
   main #stats {
-    padding: 5rem 0; }
+    margin-top: 5rem; }
     main #stats .container .stats-container {
       grid-template-columns: repeat(2, 1fr); }
-  main #testimonials .container .testimonials-container {
-    grid-gap: 1.875rem; }
-    main #testimonials .container .testimonials-container .testimonial {
-      grid-template-columns: 1fr; }
-      main #testimonials .container .testimonials-container .testimonial-customer {
-        padding: 0; }
-      main #testimonials .container .testimonials-container .testimonial-info {
-        margin-top: 1.875rem; }
-        main #testimonials .container .testimonials-container .testimonial-info .section-paragraph-primary {
-          text-align: center; }
-        main #testimonials .container .testimonials-container .testimonial-info-rating {
-          justify-content: center;
-          margin-top: 1.875rem; } }
+  main #testimonials {
+    margin-top: 5rem; }
+    main #testimonials .container .testimonials-container {
+      grid-gap: 1.875rem; }
+      main #testimonials .container .testimonials-container .testimonial {
+        grid-template-columns: 1fr; }
+        main #testimonials .container .testimonials-container .testimonial-customer {
+          padding: 0; }
+        main #testimonials .container .testimonials-container .testimonial-info {
+          margin-top: 1.875rem; }
+          main #testimonials .container .testimonials-container .testimonial-info .section-paragraph-primary {
+            text-align: center; }
+          main #testimonials .container .testimonials-container .testimonial-info-rating {
+            justify-content: center;
+            margin-top: 1.875rem; }
+  main #pricing {
+    margin-top: 5rem; }
+    main #pricing .container .pricing-container {
+      grid-gap: 1.875rem; }
+      main #pricing .container .pricing-container .pricing-card-price {
+        margin-top: 0.375rem; }
+        main #pricing .container .pricing-container .pricing-card-price span {
+          display: inline; }
+      main #pricing .container .pricing-container .pricing-card-description {
+        margin-top: 0.375rem; } }
