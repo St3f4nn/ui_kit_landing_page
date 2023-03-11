@@ -453,7 +453,71 @@ main #pricing {
         main #pricing .container .pricing-container #pricing-card-special .btn:hover::after {
           margin-left: 1rem; }
 
+main #team {
+  margin-top: 10rem; }
+  main #team .container .team-container {
+    margin-top: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.875rem; }
+    main #team .container .team-container .team-card {
+      border-radius: 20px;
+      background-color: #fff;
+      overflow: hidden;
+      box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05);
+      text-align: center;
+      color: #2d2d2d; }
+      main #team .container .team-container .team-card:nth-child(1) .team-card-img {
+        background-image: url("../assets/images/team/sarah.png"); }
+      main #team .container .team-container .team-card:nth-child(2) .team-card-img {
+        background-image: url("../assets/images/team/michael.png"); }
+      main #team .container .team-container .team-card:nth-child(3) .team-card-img {
+        background-image: url("../assets/images/team/lauren.png"); }
+      main #team .container .team-container .team-card-img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 278px; }
+      main #team .container .team-container .team-card-info {
+        padding: 1.25rem 1.875rem 1.1875rem; }
+        main #team .container .team-container .team-card-info-name {
+          font-weight: 600;
+          font-size: 1.3125rem;
+          line-height: 1.70625rem; }
+        main #team .container .team-container .team-card-info-job {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.6rem;
+          margin-top: 0.375rem; }
+      main #team .container .team-container .team-card-links {
+        padding: 1.25rem 1.5rem 1.875rem;
+        border-top: 1px solid #d8d8d8;
+        display: flex;
+        justify-content: center;
+        gap: 1rem; }
+        main #team .container .team-container .team-card-links-icon {
+          background-color: #e5f4f2;
+          border-radius: 50%;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease; }
+          main #team .container .team-container .team-card-links-icon:hover {
+            background-color: #009379; }
+            main #team .container .team-container .team-card-links-icon:hover svg path {
+              transition: all 0.3s ease;
+              fill: #fff; }
+
 @media (max-width: 1280px) {
+  main #hero .container .hero-img {
+    max-width: 390px; }
+  main #hero .container .hero-text-box {
+    padding-top: 0;
+    margin-right: 3.5rem; }
+    main #hero .container .hero-text-box .hero-heading {
+      font-size: 3.5rem; }
   main #logos .container .logos-container {
     padding: 2.4375rem 0;
     grid-gap: 4.5rem; }
@@ -483,8 +547,10 @@ main #pricing {
         max-width: 320px;
         margin-top: 2.5rem; }
       main #hero .container .hero-text-box {
-        padding-top: 0;
         margin-right: 0; }
+        main #hero .container .hero-text-box .hero-heading {
+          font-size: 4.1875rem;
+          line-height: 5.44375rem; }
         main #hero .container .hero-text-box .hero-cta {
           margin-top: 1.875rem;
           justify-content: center;
@@ -547,7 +613,20 @@ main #pricing {
         main #pricing .container .pricing-container .pricing-card-price span {
           display: block; }
       main #pricing .container .pricing-container .pricing-card-description {
-        margin-top: 0.625rem; } }
+        margin-top: 0.625rem; }
+  main #team {
+    margin-top: 6.25rem; }
+    main #team .container .team-container {
+      margin-top: 2.5rem;
+      grid-gap: 1.25rem; }
+      main #team .container .team-container .team-card:nth-child(1) .team-card-img {
+        background-image: url("../assets/images/team/sarah_tablet.png"); }
+      main #team .container .team-container .team-card:nth-child(2) .team-card-img {
+        background-image: url("../assets/images/team/michael_tablet.png"); }
+      main #team .container .team-container .team-card:nth-child(3) .team-card-img {
+        background-image: url("../assets/images/team/lauren_tablet.png"); }
+      main #team .container .team-container .team-card-img {
+        height: 173px; } }
 
 @media (max-width: 640px) {
   #main-header .container {
@@ -618,4 +697,18 @@ main #pricing {
         main #pricing .container .pricing-container .pricing-card-price span {
           display: inline; }
       main #pricing .container .pricing-container .pricing-card-description {
-        margin-top: 0.375rem; } }
+        margin-top: 0.375rem; }
+  main #team {
+    margin-top: 5rem; }
+    main #team .container .team-container {
+      margin-top: 1.875rem;
+      grid-template-columns: 1fr;
+      grid-gap: 1.875rem; }
+      main #team .container .team-container .team-card:nth-child(1) .team-card-img {
+        background-image: url("../assets/images/team/sarah_mobile.png"); }
+      main #team .container .team-container .team-card:nth-child(2) .team-card-img {
+        background-image: url("../assets/images/team/michael_mobile.png"); }
+      main #team .container .team-container .team-card:nth-child(3) .team-card-img {
+        background-image: url("../assets/images/team/lauren_mobile.png"); }
+      main #team .container .team-container .team-card-img {
+        height: 278px; } }

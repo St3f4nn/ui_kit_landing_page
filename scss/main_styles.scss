@@ -570,6 +570,102 @@ main {
       }
     }
   }
+
+  // Team
+
+  #team {
+    margin-top: 10rem;
+
+    .container {
+      .team-container {
+        margin-top: 3.75rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.875rem;
+
+        .team-card {
+          border-radius: 20px;
+          background-color: #fff;
+          overflow: hidden;
+          box-shadow: $main-box-shadow;
+          text-align: center;
+          color: $neutral-mine-shaft;
+
+          &:nth-child(1) {
+            .team-card-img {
+              background-image: url("../assets/images/team/sarah.png");
+            }
+          }
+
+          &:nth-child(2) {
+            .team-card-img {
+              background-image: url("../assets/images/team/michael.png");
+            }
+          }
+
+          &:nth-child(3) {
+            .team-card-img {
+              background-image: url("../assets/images/team/lauren.png");
+            }
+          }
+
+          &-img {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 278px;
+          }
+
+          &-info {
+            padding: 1.25rem 1.875rem 1.1875rem;
+
+            &-name {
+              font-weight: 600;
+              font-size: 1.3125rem;
+              line-height: 1.70625rem;
+            }
+
+            &-job {
+              font-weight: 400;
+              font-size: 1rem;
+              line-height: 1.6rem;
+              margin-top: 0.375rem;
+            }
+          }
+
+          &-links {
+            padding: 1.25rem 1.5rem 1.875rem;
+            border-top: 1px solid $neutral-alto;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            &-icon {
+              background-color: $cta-aqua-squeeze;
+              border-radius: 50%;
+              width: 32px;
+              height: 32px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.3s ease;
+
+              &:hover {
+                background-color: $cta-observatory;
+
+                svg {
+                  path {
+                    transition: all 0.3s ease;
+                    fill: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Media queries
@@ -578,6 +674,25 @@ main {
 
 @media (max-width: 1280px) {
   main {
+    // Hero
+
+    #hero {
+      .container {
+        .hero-img {
+          max-width: 390px;
+        }
+
+        .hero-text-box {
+          padding-top: 0;
+          margin-right: 3.5rem;
+
+          .hero-heading {
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+
     // Logos
 
     #logos {
@@ -651,8 +766,12 @@ main {
         }
 
         .hero-text-box {
-          padding-top: 0;
           margin-right: 0;
+
+          .hero-heading {
+            font-size: 4.1875rem;
+            line-height: 5.44375rem;
+          }
 
           .hero-cta {
             margin-top: 1.875rem;
@@ -792,6 +911,43 @@ main {
 
             &-description {
               margin-top: 0.625rem;
+            }
+          }
+        }
+      }
+    }
+
+    // Team
+
+    #team {
+      margin-top: 6.25rem;
+
+      .container {
+        .team-container {
+          margin-top: 2.5rem;
+          grid-gap: 1.25rem;
+
+          .team-card {
+            &:nth-child(1) {
+              .team-card-img {
+                background-image: url("../assets/images/team/sarah_tablet.png");
+              }
+            }
+
+            &:nth-child(2) {
+              .team-card-img {
+                background-image: url("../assets/images/team/michael_tablet.png");
+              }
+            }
+
+            &:nth-child(3) {
+              .team-card-img {
+                background-image: url("../assets/images/team/lauren_tablet.png");
+              }
+            }
+
+            &-img {
+              height: 173px;
             }
           }
         }
@@ -959,6 +1115,44 @@ main {
 
             &-description {
               margin-top: 0.375rem;
+            }
+          }
+        }
+      }
+    }
+
+    // Team
+
+    #team {
+      margin-top: 5rem;
+
+      .container {
+        .team-container {
+          margin-top: 1.875rem;
+          grid-template-columns: 1fr;
+          grid-gap: 1.875rem;
+
+          .team-card {
+            &:nth-child(1) {
+              .team-card-img {
+                background-image: url("../assets/images/team/sarah_mobile.png");
+              }
+            }
+
+            &:nth-child(2) {
+              .team-card-img {
+                background-image: url("../assets/images/team/michael_mobile.png");
+              }
+            }
+
+            &:nth-child(3) {
+              .team-card-img {
+                background-image: url("../assets/images/team/lauren_mobile.png");
+              }
+            }
+
+            &-img {
+              height: 278px;
             }
           }
         }
