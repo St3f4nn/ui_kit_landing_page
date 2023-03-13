@@ -510,6 +510,39 @@ main #team {
               transition: all 0.3s ease;
               fill: #fff; }
 
+main #cta-2 {
+  margin-top: 10rem; }
+  main #cta-2 .container .cta-2-container {
+    display: grid;
+    grid-template-columns: 50.09fr 49.91fr;
+    border-radius: 20px;
+    background-color: #f2bfaf;
+    overflow: hidden; }
+    main #cta-2 .container .cta-2-container-text-box {
+      padding: 3.75rem; }
+      main #cta-2 .container .cta-2-container-text-box .btn-primary {
+        margin-top: 2.5rem;
+        padding-right: 4.875rem;
+        position: relative; }
+        main #cta-2 .container .cta-2-container-text-box .btn-primary::after {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url("../assets/images/global/arrow_right_white.svg") no-repeat center center/cover;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-left: 0.5rem;
+          transition: all 0.3s ease-out; }
+        main #cta-2 .container .cta-2-container-text-box .btn-primary:hover::after {
+          margin-left: 1rem; }
+    main #cta-2 .container .cta-2-container-img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../assets/images/cta_2/mockup.png"); }
+
 @media (max-width: 1280px) {
   main #hero .container .hero-img {
     max-width: 390px; }
@@ -626,7 +659,15 @@ main #team {
       main #team .container .team-container .team-card:nth-child(3) .team-card-img {
         background-image: url("../assets/images/team/lauren_tablet.png"); }
       main #team .container .team-container .team-card-img {
-        height: 173px; } }
+        height: 173px; }
+  main #cta-2 {
+    margin-top: 6.25rem; }
+    main #cta-2 .container .cta-2-container {
+      grid-template-columns: 52.94fr 47.06fr; }
+      main #cta-2 .container .cta-2-container-text-box {
+        padding: 2.5rem 1.875rem; }
+      main #cta-2 .container .cta-2-container-img {
+        background-image: url("../assets/images/cta_2/mockup_tablet.png"); } }
 
 @media (max-width: 640px) {
   #main-header .container {
@@ -711,4 +752,20 @@ main #team {
       main #team .container .team-container .team-card:nth-child(3) .team-card-img {
         background-image: url("../assets/images/team/lauren_mobile.png"); }
       main #team .container .team-container .team-card-img {
-        height: 278px; } }
+        height: 278px; }
+  main #cta-2 {
+    margin-top: 5rem; }
+    main #cta-2 .container .cta-2-container {
+      grid-template-columns: 1fr;
+      background: none;
+      background: linear-gradient(101.21deg, #f2bfaf 34.58%, #f8f9ff 113.14%); }
+      main #cta-2 .container .cta-2-container-text-box {
+        grid-row: 2;
+        padding: 2.125rem 1.875rem 2.5rem; }
+        main #cta-2 .container .cta-2-container-text-box .btn-primary {
+          text-align: center;
+          width: 100%; }
+      main #cta-2 .container .cta-2-container-img {
+        background-image: url("../assets/images/cta_2/mockup_mobile.png");
+        height: 270px;
+        grid-row: 1; } }

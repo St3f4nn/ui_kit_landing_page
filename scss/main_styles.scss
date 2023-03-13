@@ -666,6 +666,57 @@ main {
       }
     }
   }
+
+  // CTA 2
+
+  #cta-2 {
+    margin-top: 10rem;
+
+    .container {
+      .cta-2-container {
+        display: grid;
+        grid-template-columns: 50.09fr 49.91fr;
+        border-radius: 20px;
+        background-color: $secondary-mandys-pink;
+        overflow: hidden;
+
+        &-text-box {
+          padding: 3.75rem;
+
+          .btn-primary {
+            margin-top: 2.5rem;
+            padding-right: 4.875rem;
+            position: relative;
+
+            &::after {
+              content: "";
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              background: url("../assets/images/global/arrow_right_white.svg")
+                no-repeat center center/cover;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              margin-left: 0.5rem;
+              transition: all 0.3s ease-out;
+            }
+
+            &:hover::after {
+              margin-left: 1rem;
+            }
+          }
+        }
+
+        &-img {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-image: url("../assets/images/cta_2/mockup.png");
+        }
+      }
+    }
+  }
 }
 
 // Media queries
@@ -953,6 +1004,26 @@ main {
         }
       }
     }
+
+    // CTA 2
+
+    #cta-2 {
+      margin-top: 6.25rem;
+
+      .container {
+        .cta-2-container {
+          grid-template-columns: 52.94fr 47.06fr;
+
+          &-text-box {
+            padding: 2.5rem 1.875rem;
+          }
+
+          &-img {
+            background-image: url("../assets/images/cta_2/mockup_tablet.png");
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1154,6 +1225,40 @@ main {
             &-img {
               height: 278px;
             }
+          }
+        }
+      }
+    }
+
+    // CTA 2
+
+    #cta-2 {
+      margin-top: 5rem;
+
+      .container {
+        .cta-2-container {
+          grid-template-columns: 1fr;
+          background: none;
+          background: linear-gradient(
+            101.21deg,
+            #f2bfaf 34.58%,
+            #f8f9ff 113.14%
+          );
+
+          &-text-box {
+            grid-row: 2;
+            padding: 2.125rem 1.875rem 2.5rem;
+
+            .btn-primary {
+              text-align: center;
+              width: 100%;
+            }
+          }
+
+          &-img {
+            background-image: url("../assets/images/cta_2/mockup_mobile.png");
+            height: 270px;
+            grid-row: 1;
           }
         }
       }
