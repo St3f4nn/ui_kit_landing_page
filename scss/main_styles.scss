@@ -53,7 +53,6 @@ img {
   padding: 1.25rem 0;
 
   .container {
-    padding: 0 3.125rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -823,6 +822,7 @@ main {
             border: 1px solid $neutral-alto;
             border-radius: 20px;
             padding-left: 1.1875rem;
+            overflow: hidden;
 
             &-icon {
               display: flex;
@@ -895,6 +895,56 @@ main {
   }
 }
 
+// Footer
+
+#main-footer {
+  margin-top: 10rem;
+  padding: 1.5rem 0;
+  color: #fff;
+  background-color: $neutral-mine-shaft;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-copyright-message {
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      padding-right: 13rem;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &-link {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4e4d4d;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #fff;
+
+          svg {
+            path {
+              transition: all 0.3s ease;
+              fill: #4e4d4d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // Media queries
 
 // Desktop (1280px)
@@ -956,8 +1006,6 @@ main {
 
   #main-header {
     .container {
-      padding: 0 1.875rem;
-
       nav {
         ul {
           li {
@@ -1220,6 +1268,19 @@ main {
       }
     }
   }
+
+  // Footer
+
+  #main-footer {
+    margin-top: 6.25rem;
+
+    .container {
+      .footer-copyright-message {
+        line-height: 1.4rem;
+        padding-right: 8rem;
+      }
+    }
+  }
 }
 
 // Mobile (640px)
@@ -1465,13 +1526,27 @@ main {
       margin-top: 1.875rem;
 
       .container {
-        padding: 0 1.71875rem;
-
         .contact-container {
           .contact-info {
             padding-right: 0;
           }
         }
+      }
+    }
+  }
+
+  // Footer
+
+  #main-footer {
+    margin-top: 1.875rem;
+
+    .container {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 1.25rem;
+
+      .footer-copyright-message {
+        padding-right: 0;
       }
     }
   }
