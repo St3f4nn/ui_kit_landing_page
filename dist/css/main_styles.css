@@ -7,7 +7,9 @@
   display: inline-block;
   padding: 1.125rem 3.125rem;
   border-radius: 20px;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer; }
 
 .btn-primary {
   background-color: #009379;
@@ -84,6 +86,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #f8f9ff;
   font-family: "Mulish", sans-serif; }
@@ -105,7 +110,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: #009379; }
+  color: #009379;
+  line-height: 1.5rem; }
 
 img {
   width: 100%; }
@@ -493,6 +499,7 @@ main #team {
         padding: 1.25rem 1.5rem 1.875rem;
         border-top: 1px solid #d8d8d8;
         display: flex;
+        align-items: center;
         justify-content: center;
         gap: 1rem; }
         main #team .container .team-container .team-card-links-icon {
@@ -542,6 +549,117 @@ main #cta-2 {
       background-position: center;
       background-size: cover;
       background-image: url("../assets/images/cta_2/mockup.png"); }
+
+main #contact {
+  margin-top: 10rem; }
+  main #contact .container .contact-container {
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    main #contact .container .contact-container .section-paragraph-primary {
+      text-align: left; }
+    main #contact .container .contact-container .contact-info {
+      padding-right: 3.75rem; }
+      main #contact .container .contact-container .contact-info-text .section-heading {
+        font-weight: 700;
+        color: #2d2d2d;
+        text-align: left; }
+      main #contact .container .contact-container .contact-info-text .section-paragraph-primary {
+        margin-top: 0.625rem; }
+      main #contact .container .contact-container .contact-info-personal {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        margin-top: 2.5rem; }
+        main #contact .container .contact-container .contact-info-personal-container {
+          display: flex;
+          gap: 0.75rem; }
+          main #contact .container .contact-container .contact-info-personal-container-img {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0; }
+      main #contact .container .contact-container .contact-info-social {
+        margin-top: 6.625rem; }
+        main #contact .container .contact-container .contact-info-social-heading {
+          font-weight: 600;
+          font-size: 1.3125rem;
+          line-height: 1.70625rem;
+          color: #2d2d2d; }
+        main #contact .container .contact-container .contact-info-social-container {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1.25rem; }
+          main #contact .container .contact-container .contact-info-social-container-link {
+            width: 32px;
+            height: 32px;
+            background-color: #e5f4f2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease; }
+            main #contact .container .contact-container .contact-info-social-container-link:hover {
+              background-color: #009379; }
+              main #contact .container .contact-container .contact-info-social-container-link:hover svg path {
+                transition: all 0.3s ease;
+                fill: #fff; }
+    main #contact .container .contact-container .contact-form-group {
+      display: flex;
+      align-items: center;
+      border: 1px solid #d8d8d8;
+      border-radius: 20px;
+      padding-left: 1.1875rem; }
+      main #contact .container .contact-container .contact-form-group-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #dbe3ff;
+        padding-right: 0.5rem; }
+        main #contact .container .contact-container .contact-form-group-icon img {
+          width: 20px;
+          height: 20px; }
+      main #contact .container .contact-container .contact-form-group input {
+        border: none;
+        background: none;
+        font-family: "Mulish", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #2d2d2d;
+        padding: 1.0625rem 1.1875rem 1.0625rem 0.75rem;
+        width: 100%; }
+        main #contact .container .contact-container .contact-form-group input:focus {
+          outline: none; }
+      main #contact .container .contact-container .contact-form-group:nth-child(2) {
+        margin-top: 0.625rem; }
+    main #contact .container .contact-container .contact-form textarea {
+      border: none;
+      background: none;
+      resize: none;
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      color: #3b3b3b;
+      border: 1px solid #d8d8d8;
+      border-radius: 20px;
+      padding: 0.4375rem 1.1875rem;
+      width: 100%;
+      min-height: 180px;
+      margin-top: 0.625rem; }
+      main #contact .container .contact-container .contact-form textarea:focus {
+        outline: none; }
+    main #contact .container .contact-container .contact-form .submit-btn {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-top: 1rem; }
+      main #contact .container .contact-container .contact-form .submit-btn:hover {
+        background-color: #e5f4f2;
+        color: #009379; }
 
 @media (max-width: 1280px) {
   main #hero .container .hero-img {
@@ -667,7 +785,16 @@ main #cta-2 {
       main #cta-2 .container .cta-2-container-text-box {
         padding: 2.5rem 1.875rem; }
       main #cta-2 .container .cta-2-container-img {
-        background-image: url("../assets/images/cta_2/mockup_tablet.png"); } }
+        background-image: url("../assets/images/cta_2/mockup_tablet.png"); }
+  main #contact {
+    margin-top: 6.25rem; }
+    main #contact .container .contact-container {
+      padding: 2.5rem;
+      grid-template-columns: 1fr;
+      grid-gap: 3.75rem;
+      box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05); }
+      main #contact .container .contact-container .contact-info {
+        padding-right: 8.4375rem; } }
 
 @media (max-width: 640px) {
   #main-header .container {
@@ -768,4 +895,10 @@ main #cta-2 {
       main #cta-2 .container .cta-2-container-img {
         background-image: url("../assets/images/cta_2/mockup_mobile.png");
         height: 270px;
-        grid-row: 1; } }
+        grid-row: 1; }
+  main #contact {
+    margin-top: 1.875rem; }
+    main #contact .container {
+      padding: 0 1.71875rem; }
+      main #contact .container .contact-container .contact-info {
+        padding-right: 0; } }

@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $neutral-zircon;
   font-family: $mulish-font-stack;
@@ -36,6 +40,7 @@ ul {
 a {
   text-decoration: none;
   color: $cta-observatory;
+  line-height: 1.5rem;
 }
 
 img {
@@ -637,6 +642,7 @@ main {
             padding: 1.25rem 1.5rem 1.875rem;
             border-top: 1px solid $neutral-alto;
             display: flex;
+            align-items: center;
             justify-content: center;
             gap: 1rem;
 
@@ -713,6 +719,176 @@ main {
           background-position: center;
           background-size: cover;
           background-image: url("../assets/images/cta_2/mockup.png");
+        }
+      }
+    }
+  }
+
+  // Contact
+
+  #contact {
+    margin-top: 10rem;
+
+    .container {
+      .contact-container {
+        border: 1px solid $neutral-alto;
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 3.75rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .section-paragraph-primary {
+          text-align: left;
+        }
+
+        .contact-info {
+          padding-right: 3.75rem;
+
+          &-text {
+            .section-heading {
+              font-weight: 700;
+              color: $neutral-mine-shaft;
+              text-align: left;
+            }
+
+            .section-paragraph-primary {
+              margin-top: 0.625rem;
+            }
+          }
+
+          &-personal {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-top: 2.5rem;
+
+            &-container {
+              display: flex;
+              gap: 0.75rem;
+
+              &-img {
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+              }
+            }
+          }
+
+          &-social {
+            margin-top: 6.625rem;
+
+            &-heading {
+              font-weight: 600;
+              font-size: 1.3125rem;
+              line-height: 1.70625rem;
+              color: $neutral-mine-shaft;
+            }
+
+            &-container {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              margin-top: 1.25rem;
+
+              &-link {
+                width: 32px;
+                height: 32px;
+                background-color: $cta-aqua-squeeze;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+
+                &:hover {
+                  background-color: $cta-observatory;
+
+                  svg {
+                    path {
+                      transition: all 0.3s ease;
+                      fill: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .contact-form {
+          &-group {
+            display: flex;
+            align-items: center;
+            border: 1px solid $neutral-alto;
+            border-radius: 20px;
+            padding-left: 1.1875rem;
+
+            &-icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-right: 1px solid #dbe3ff;
+              padding-right: 0.5rem;
+
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            input {
+              border: none;
+              background: none;
+              font-family: $mulish-font-stack;
+              font-weight: 400;
+              font-size: 1rem;
+              line-height: 1.5rem;
+              color: $neutral-mine-shaft;
+              padding: 1.0625rem 1.1875rem 1.0625rem 0.75rem;
+              width: 100%;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            &:nth-child(2) {
+              margin-top: 0.625rem;
+            }
+          }
+
+          textarea {
+            border: none;
+            background: none;
+            resize: none;
+            font-family: $mulish-font-stack;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.4rem;
+            color: #3b3b3b;
+            border: 1px solid $neutral-alto;
+            border-radius: 20px;
+            padding: 0.4375rem 1.1875rem;
+            width: 100%;
+            min-height: 180px;
+            margin-top: 0.625rem;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .submit-btn {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-top: 1rem;
+
+            &:hover {
+              background-color: $cta-aqua-squeeze;
+              color: $cta-observatory;
+            }
+          }
         }
       }
     }
@@ -1024,6 +1200,25 @@ main {
         }
       }
     }
+
+    // Contact
+
+    #contact {
+      margin-top: 6.25rem;
+
+      .container {
+        .contact-container {
+          padding: 2.5rem;
+          grid-template-columns: 1fr;
+          grid-gap: 3.75rem;
+          box-shadow: $main-box-shadow;
+
+          .contact-info {
+            padding-right: 8.4375rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1259,6 +1454,22 @@ main {
             background-image: url("../assets/images/cta_2/mockup_mobile.png");
             height: 270px;
             grid-row: 1;
+          }
+        }
+      }
+    }
+
+    // Contact
+
+    #contact {
+      margin-top: 1.875rem;
+
+      .container {
+        padding: 0 1.71875rem;
+
+        .contact-container {
+          .contact-info {
+            padding-right: 0;
           }
         }
       }
